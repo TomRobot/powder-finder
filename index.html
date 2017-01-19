@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Powder Finder</title>
+    <title>Campsite Source</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -10,43 +10,37 @@
     <div id="header-container">
         <header>
             <a href="index.html">
-                <img id="logo" src="images/logo.svg" alt="Powder Finder Logo">
+                <img id="logo" src="images/logo.svg" alt="Campsite Source Logo">
+                <h1>Campsite Source</h1>
             </a>
-            <div>
-                <form class="search-box">
-                    Search:
-                    <input type="text" name="Search:">
-                </form>
-                <nav>
-                    <button class="button"><a href="index.html">About</a></button>
-                    <button class="button"><a href="index.html">Map</a></button>
-                    <button class="button"><a href="index.html">Contact</a></button>
-                </nav>
-            </div>
-            <div>
-                <!-- <nav>
-                    <button class="button"><a href="index.html">About</a></button>
-                    <button class="button"><a href="index.html">Map</a></button>
-                    <button class="button"><a href="index.html">Contact</a></button>
-                </nav> -->
-            </div>
+            <form class="search-box">
+                Search:
+                <input type="text" name="Search:">
+            </form>
+            <nav>
+                <button class="button"><a href="index.html">About</a></button>
+                <button class="button"><a href="index.html">Map</a></button>
+                <button class="button"><a href="index.html">Contact</a></button>
+            </nav>
         </header>
     </div>
     <hr>
     <main>
-        <div id="content-container">
-            <h1>Find Powder near you!</h1>
-            <div id="map">
-                <h2>This is where a Google Heatmap will go, using their API.</h2>
-            </div>
-            <p>Heat-map showing snow depth based on NRCS Snotel Data.</p>
+        <div class="content-container" id="background-image">
+            <h1 id="hero-text">Find Camping near you!</h1>
+            <div id="map"></div>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb0zi8rlHp3nTB6YZIqE_vX_dyY5dBM-Y&callback=initMap" async defer>
+            </script>
         </div>
     </main>
     <hr>
     <script src="main.js"></script>
+    <hr>
+
 </body>
-<div id="footer-container">
-    <p>This website was created with love and care by Tom Robson.</p>
-    </footer>
+<footer>
+    <div id="footer-container">
+        <p>This website was created with love and care by Tom Robson.</p>
+</footer>
 
 </html>
